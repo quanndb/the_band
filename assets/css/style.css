@@ -97,7 +97,7 @@ html {
     /* background-color: rgb(79, 198, 234); */
     margin-top:46.5px;
     padding-top: 50%;
-    background: url('../css/img/chicago.jpg'), no-repeat;
+    background: url('./img/1.jpg'), no-repeat;
     background-position: top center;
     background-size:cover;
     position: relative;
