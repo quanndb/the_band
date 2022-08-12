@@ -55,12 +55,19 @@ var $=document.querySelector.bind(document)
     $$=document.querySelectorAll.bind(document)
     const sliderimg=$$('.sliderimg')
         ,sliderctn=$$('.text-content')
-    var i=0
-    console.log(sliderimg.length)
-
+    const backimg=$('#slider')
+    var i=1
+    function j(i){
+        if(i===0) return 2
+        else{
+            return i-1
+        }
+    }
     setInterval(function(){
         $('.sliderimg.active').classList.remove('active')
         $('.text-content.active').classList.remove('active')
+        backimg.style.background=`url('./assets/css/img/${j(i)}.jpg'), no-repeat`
+        backimg.style.backgroundSize='cover'
             sliderimg[i].classList.add('active')
             sliderctn[i].classList.add('active')
         i++
