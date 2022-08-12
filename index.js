@@ -51,16 +51,20 @@ for(const menuItem of menuItems){
     }
 }
 
-// var a='quan dep trai';
+var $=document.querySelector.bind(document)
+    $$=document.querySelectorAll.bind(document)
+    const sliderimg=$$('.sliderimg')
+        ,sliderctn=$$('.text-content')
+    var i=0
+    console.log(sliderimg.length)
 
-var slider=document.querySelector('#slider')
-var i=1;
-slider.style.backgroundImage=`url('../css/img/${i}.jpg'),no-repeat`;
-
-// setInterval(()=>{
-//     console.log(i);
-//     i++;
-//     if(i>=4){
-//         i=1;
-//     }
-// }, 3000);
+    setInterval(function(){
+        $('.sliderimg.active').classList.remove('active')
+        $('.text-content.active').classList.remove('active')
+            sliderimg[i].classList.add('active')
+            sliderctn[i].classList.add('active')
+        i++
+        if(i>=sliderimg.length){
+            i=0
+        }
+    },3000)

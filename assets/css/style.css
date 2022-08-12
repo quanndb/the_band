@@ -96,12 +96,19 @@ html {
 #slider {
     /* background-color: rgb(79, 198, 234); */
     margin-top:46.5px;
-    padding-top: 50%;
-    background: url('./img/1.jpg'), no-repeat;
-    background-position: top center;
-    background-size:cover;
-    position: relative;
+    /* padding-top: 50%; */
+    /* background: url('./img/1.jpg'), no-repeat; */
+    /* background-position: top center; */
+    /* background-size:cover; */
+    /* position: relative; */
 }
+
+#slider img{
+   width: 100%;
+   display: none;
+}
+
+
 #slider .text-content{
    position: absolute;
    left:50%;
@@ -109,7 +116,13 @@ html {
    color:#fff;
    transform: translate(-50%,-100%);
    text-align: center;
+   display: none;
 }
+
+#slider .active{
+   display: block;
+}
+
 .heading{
    padding: 10px;
    font-weight: 400;

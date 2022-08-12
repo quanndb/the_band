@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_inner_html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body contenteditable="false" data-new-gr-c-s-check-loaded="14.1073.0" data-gr-ext-installed="">
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick="document.getElementById(&quot;demo&quot;).innerHTML = &quot;Hello JavaScript!&quot;">Click Me!</button>
+<script>
+function a(x) {
+  x++;
+  return function () {
+    console.log(++x);
+  };
+}
+
+a(1)();
+a(1)();
+a(1)();
+
+let x = a(1);
+x();
+</script>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
