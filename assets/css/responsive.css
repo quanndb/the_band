@@ -51,6 +51,11 @@
         color:white;
         padding:5px 41px;
     }
+    
+    #slider .text-content{
+        width: 100%;
+        padding:48px 0px;
+    }
 
     #slider .text-content{
         width: 100%;
